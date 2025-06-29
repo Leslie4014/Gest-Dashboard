@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.encabezado {
+  width: 100%;
+  padding: 1px 20px;
+  font-size: 60px;
+  font-style: italic;
+  color: #6209CF;
+  border-bottom: 2px solid #ddd;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.contenedor-principal {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+.menu-lateral {
+  width: 60px;
+  background-color: #ffffff;
+  padding: 65px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.icono-modulo {
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-modulo:hover {
+  transform: scale(1.2);
+}
+
+.etiqueta {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icono-modulo:hover .etiqueta {
+  opacity: 1;
+}
+
+.principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  flex: 1;
+  background: linear-gradient(to bottom, #6209CF 0%, #460695 35%, #320569 70%);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opciones-catalogo {
+  display: flex;
+  gap: 170px;
+}
+
+.opcion-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.boton-opcion {
+  width: 290px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  color: #6209CF;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.boton-opcion:hover {
+  transform: scale(1.05);
+}
+
+.etiqueta-opcion {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}

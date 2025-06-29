@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './login.css'
 })
 export class Login {
-  loginForm!:FormGroup
+  loginForm!:FormGroup //investigar como hacer uno
   submitted=false
 
   constructor(private authService: AuthService, private fb: FormBuilder){}
@@ -23,14 +23,10 @@ export class Login {
       email:['', [Validators.required, Validators.email]],
       password:['', Validators.required],
     });
-    // hacer un form con formGroup y conectarlo a tus inputs en el archivo login.html, y conectar la etiqueta form, al formGroup
   }
   get f(){
     return this.loginForm.controls;
   }
-
-  // Que es CORS en la web
-  // Como configurar CORS en mi proyecto de Spring Boot 
 
   onSubmit(){
     this.submitted = true
