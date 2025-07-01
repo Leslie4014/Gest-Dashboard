@@ -1,0 +1,39 @@
+.opciones-catalogo {
+  display: flex;
+  gap: 170px;
+}
+
+.opcion-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.boton-opcion {
+  width: 290px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  color: #6209CF;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.boton-opcion:hover {
+  transform: scale(1.05);
+}
+
+.etiqueta-opcion {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}

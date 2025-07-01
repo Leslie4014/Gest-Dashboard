@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
+import { BotonesEmpresaComponent } from './botones-empresa/botones-empresa';
 
 @Component({
   selector: 'app-dashboard',
-  standalone:true,
-  imports: [],
+  standalone: true,
+  imports: [BotonesEmpresaComponent],
   templateUrl: './dashboard.html',
-  styleUrl: './dashboard.css'
+  styleUrls: ['./dashboard.css']
 })
 export class Dashboard {
   seleccionarApartado(nombre: string) {
     console.log('Sección seleccionada:', nombre);
-    // navegar con el Router o mostrar contenido dinámico
   }
 }
