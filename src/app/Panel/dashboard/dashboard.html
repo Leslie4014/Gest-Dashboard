@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gestiora - Catálogo</title>
+  <title>Gestiora - Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-  <!-- Título principal -->
-  <div class="encabezado">Gestiora</div>
+  <!-- Barra superior -->
+  <header class="barra-superior">
+    <div class="logo-texto">
+      <i class="fas fa-circle-nodes icono-logo"></i>
+      <span class="titulo">Gestiora</span>
+    </div>
+
+    <nav class="menu-opciones">
+      <div class="icono-modulo icono-separado">
+        <i class="fas fa-list-ul"></i>
+        <span class="etiqueta">Catálogo</span>
+      </div>
+      <div class="icono-modulo">
+        <i class="fas fa-gear"></i>
+        <span class="etiqueta">Configuración</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subbarra -->
+  <div class="sub-barra">
+    Nombre de la empresa
+  </div>
 
   <!-- Contenedor principal -->
   <div class="contenedor-principal">
@@ -16,16 +39,20 @@
     <!-- Menú lateral -->
     <nav class="menu-lateral">
       <div class="icono-modulo">
-        <i class="fas fa-user"></i>
-        <span class="etiqueta">Empleado</span>
+        <i class="fa-solid fa-user-tie"></i>
+        <span class="etiqueta">Departamentos</span>
+      </div>
+      <div class="icono-modulo">
+        <i class="fa-solid fa-money-check-dollar"></i>
+        <span class="etiqueta">Percepciones</span>
+      </div>
+      <div class="icono-modulo">
+        <i class="fa-solid fa-arrow-down-short-wide"></i>
+        <span class="etiqueta">Deducciones</span>
       </div>
       <div class="icono-modulo">
         <i class="fas fa-calendar-alt"></i>
         <span class="etiqueta">Días y Horas</span>
-      </div>
-      <div class="icono-modulo">
-        <i class="fas fa-list-ul"></i>
-        <span class="etiqueta">Catálogo</span>
       </div>
       <div class="icono-modulo">
         <i class="fas fa-file-invoice"></i>

@@ -13,13 +13,13 @@
 .boton-opcion {
   width: 290px;
   height: 250px;
-  background-color: white;
+  background-color: #99a9c579;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 120px;
-  color: #6209CF;
+  color: #232536;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
@@ -31,9 +31,10 @@
 }
 
 .etiqueta-opcion {
-  color: black;
+  color: rgb(35, 37, 54);
   font-size: 20px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   white-space: nowrap;
   letter-spacing: 0.5px;
+  font-family: 'Ubuntu', sans-serif;
 }
